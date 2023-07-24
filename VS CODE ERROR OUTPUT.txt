@@ -1,0 +1,15 @@
+Please note and check the following:
+
+  * The Python version is: Python3.9 from "C:\Users\ruizg\anaconda3\python.exe"
+  * The NumPy version is: "1.24.3"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: DLL load failed while importing _multiarray_umath: No se puede encontrar el módulo especificado.
+ImportError: DLL load failed while importing _multiarray_umath: No se puede encontrar el módulo especificado.
+
+During handling of the above exception, another exception occurred:
+
+  File "C:\Users\ruizg\OneDrive\Escritorio\IRONHACK FINAL PROJECT CONTENT\VISUAL STUDIO CODE\main_test.py", line 2, in <module>
+    import streamlit as st
