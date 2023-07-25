@@ -14,3 +14,7 @@ this dataset provides information as of April 2023, for updated information we m
 Source to the Kaggle dataset: https://www.kaggle.com/datasets/arnabchaki/data-science-salaries-2023 
 
 Summary of key findings: https://docs.google.com/document/d/1eYKkVRIIXONoLZCa148F_T_myIjpHlaAn3hx7pcCRqQ/edit?usp=sharing 
+
+Note: before we get into the project, we would like to highlight that we have also created another jupyter notebook where we perform the entire machine learning after removing outliers, following the iqr method. File is available in the following link: 
+
+https://github.com/carlosruiz-stack/ironhack_final_version/blob/600f7441f4b314ed7409ccefd8cee210c6bfc965/it_job_offerings_removed_outliers.ipynb 
