@@ -18,3 +18,6 @@ Summary of key findings: https://docs.google.com/document/d/1eYKkVRIIXONoLZCa148
 Note: before we get into the project, we would like to highlight that we have also created another jupyter notebook where we perform the entire machine learning after removing outliers, following the iqr method. File is available in the following link: 
 
 https://github.com/carlosruiz-stack/ironhack_final_version/blob/600f7441f4b314ed7409ccefd8cee210c6bfc965/it_job_offerings_removed_outliers.ipynb 
+
+  Local URL: http://localhost:8510
+  Network URL: http://192.168.1.130:8510
