@@ -1,4 +1,4 @@
-# ironhack_final_version
+# ironhack final version
 FINAL VERSION OF THE PROJECT WITH ALL THE FILES 
 
 The intention of this project is to provide a thorough analysis of a dataset regarding it-related job offerings, where we analyze relevant aspects such as the job title, location and gross average salary.
