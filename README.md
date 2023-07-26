@@ -26,7 +26,9 @@ Source to the Kaggle dataset: https://www.kaggle.com/datasets/arnabchaki/data-sc
 
 # KEY FINDINGS AND DATA VISUALISATION 
 
-Summary of key findings: https://docs.google.com/document/d/1eYKkVRIIXONoLZCa148F_T_myIjpHlaAn3hx7pcCRqQ/edit?usp=sharing 
+Summary of key findings: https://docs.google.com/document/d/1eYKkVRIIXONoLZCa148F_T_myIjpHlaAn3hx7pcCRqQ/edit?usp=sharing
+Data Visualization Tableau Workbook: https://public.tableau.com/views/ITJOBOPENINGSDASHBOARD/Sheet2?:language=es-ES&:display_count=n&:origin=viz_share_link 
+
 
 # ADDITIONAL CONSIDERATIONS 
 
