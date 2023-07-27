@@ -1,19 +1,34 @@
 from sklearn.linear_model import LinearRegression
 
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.model_selection import train_test_split
+
 import streamlit as st
 import pandas as pd
 
-dataset = pd.read_csv("¨name_of_file.csv")
-X = dataset[['experience_level', 'employment_type', 'job_title', 'remote_ratio', 'company_location']]
+dataset = pd.read_csv("../JUPYTER NOTEBOOK/ds_salaries (1).csv")
+
+X = dataset[['experience_level', 'employment_type', 'job_title','company_location' ,'remote_ratio']]
 y = dataset['salary_in_usd']
+
+X_encoded = pd.get_dummies(X, columns=['experience_level', 'employment_type', 'job_title', 'company_location'])
+
+X_train, X_test, y_train, y_test = train_test_split(X_encoded, y, test_size=0.2, random_state=42)
+
 model = LinearRegression()
-model.fit(X, y)
+model.fit(X_train, y_train)
+
+y_pred = model.predict(X_test)
+
 
 def main():
     st.title("Salary Estimator")
     
     experience_level = st.selectbox("Select Experience Level", ['SE','MI','EN','EX'])
+
+ 
     employment_type = st.selectbox("Select Employment Type", ['FT','CT','FL','PT'])
+
 
     job_title = st.selectbox("Enter Job Title", ['Principal Data Scientist', 'ML Engineer', 'Data Scientist', 'Applied Scientist', 
                                                  'Data Analyst', 'Data Modeler', 'Research Engineer', 'Analytics Engineer', 
@@ -51,14 +66,14 @@ def main():
    
     remote_ratio = st.slider("Remote Work Ratio (%)", min_value=0, max_value=100, value=50, step=50)
 
-    user_input = pd.DataFrame({
-        'experience_level': [experience_level],
-        'employment_type': [employment_type],
-        'job_title': [job_title],
-        'location': [company_location],
-        'remote_ratio': [remote_ratio]
+    user_input = pd.DataFrame.from_dict({
+        'experience_level': experience_level, 
+        'employment_type': employment_type,
+        'job_title': job_title,
+        'location': company_location,
+        'remote_ratio': remote_ratio
    
-    })       
+    }, orient='index').T    
 
     predicted_salary = model.predict(user_input)[0]
     
